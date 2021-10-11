@@ -276,7 +276,7 @@ void InputManager::parse_args()
                         throw std::runtime_error("Invalid parameter for function");
                     input_params.filter_param = p;
                 }
-                if (input_params.function_type == "balldensity" || input_params.function_type == "eccentricity")
+                if (input_params.function_type == "balldensity" || input_params.function_type == "eccentricity" || input_params.function_type == "gaussian")
                     input_params.x_reverse = true;
             } else if (line[0] == "--xreverse") {
                 input_params.x_reverse = true;
